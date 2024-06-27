@@ -1,3 +1,15 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:039371ab05b5f94833082d2f4c7730239ae9b176ebf811bfd7f9e7678bd75eaa
-size 638
+Package: censuspumf
+Title: Provides convenient access to R-formatted data from the 2021 Canadian Census Public Use Microdata File (PUMF)
+Version: 0.0.0.9000
+Authors@R: 
+    person("Thomas", "McManus", , "tmcmanus@blueprint-ade.ca", role = c("aut", "cre"))
+Description: Offers factorized data and variable labels from the 2021 PUMF, 
+    along with several convenience functions for estimating sampling error based on 
+    the replicate weights provided in the PUMF and the accompanying documentation. 
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 2.10)
+LazyData: true
