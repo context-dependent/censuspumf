@@ -1,3 +1,7 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:1a8eee0b33cbc20be6d0048268fefd4c369d1c5d7cc583f2db02be0a30c7bfa4
-size 58
+.Rproj.user
+.Rhistory
+.Rdata
+.httr-oauth
+.DS_Store
+.quarto
+local
