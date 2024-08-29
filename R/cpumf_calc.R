@@ -1,3 +1,7 @@
+#' @title Total likelihood with replicate weights
+#' @name cpumf_total
+#' @rdname calc
+#' @export
 cpumf_total <- function(r) {
   rep_vals <- apply(r, 2, sum)
   mu <- mean(rep_vals)
@@ -6,6 +10,10 @@ cpumf_total <- function(r) {
   distributional::dist_student_t(60, mu = mu, sigma = se)
 }
 
+#' @title Calculate mean likelihood with replicate weights
+#' @name cpumf_mean
+#' @rdname calc
+#' @export
 cpumf_mean <- function(x, w, r) {
   mu <- weighted.mean(x, w)
   rep_vals <- apply(r, 2, function(m) weighted.mean(x, m))
